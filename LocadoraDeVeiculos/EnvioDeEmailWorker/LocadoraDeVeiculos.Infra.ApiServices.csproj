@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-EnvioDeEmailWorker-7D88EAD7-862D-4AB6-8902-01E22F07C2A8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LocadoraDeVeiculos.Aplicacao\LocadoraDeVeiculos.Aplicacao.csproj" />
+    <ProjectReference Include="..\LocadoraDeVeiculos.Infra.EntityFramework\LocadoraDeVeiculos.Infra.EntityFramework.csproj" />
+    <ProjectReference Include="..\LocadoraDeVeiculos.Infra.InternetServices\LocadoraDeVeiculos.Infra.InternetServices.csproj" />
+  </ItemGroup>
+</Project>
